@@ -1,0 +1,28 @@
+.navbar {
+  opacity: 0;
+  animation: 2s fadeIn forwards;
+}
+
+.navbar__section {
+  display: flex;
+  padding: 20px 0;
+}
+
+.navbar__item {
+  text-align: center;
+  flex: 1;
+  font-size: 1.3em;
+}
+
+.navbar__link:hover {
+  color: var(--all-color);
+}
+
+@keyframes fadeIn {
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
