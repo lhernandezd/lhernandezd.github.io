@@ -1,0 +1,11 @@
+.section__social {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+
+.social__link:hover {
+  transition: 0.9s;
+  transform: rotateY(360deg);
+}
