@@ -18,11 +18,8 @@
   color: var(--all-color);
 }
 
-@keyframes fadeIn {
-  10% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+@media (min-width: 900px) {
+  .navbar__item {
+    font-size: 1.5em;
   }
 }

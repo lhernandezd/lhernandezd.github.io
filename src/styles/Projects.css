@@ -1,0 +1,30 @@
+.projects__title {
+  margin: 40px auto;
+  width: 100%;
+  text-align: center;
+  animation: bounceInDown 4s forwards;
+}
+
+.title {
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color:  var(--all-color);
+}
+
+.projects__content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  opacity: 0;
+  animation: 4s fadeIn 2s forwards;
+}

@@ -1,7 +1,8 @@
 .content__card {
-  width: 30%;
+  width: 100%;
   text-align: center;
   margin-bottom: 60px;
+  padding: 0 10px;
 }
 
 .card__meta {
@@ -24,8 +25,25 @@
 
 .content__card:hover .card__link {
   color: white;
+  font-weight: bold;
 }
 
 .card__icons {
   font-size:30px;
+}
+
+.card__icons i {
+  margin: 0 10px 16px;
+}
+
+@media (min-width: 550px) {
+  .content__card {
+    width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .content__card {
+    width: 30%;
+  }
 }
