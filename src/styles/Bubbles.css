@@ -1,0 +1,108 @@
+.pos1 {
+  bottom: 50%;
+  right: 10%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) var(--time) forwards;
+  background-color: rgba(4, 146, 16, 0.603);
+}
+
+.pos2 {
+  bottom: 30%;
+  left: -2%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 2s) forwards;
+  background-color: rgba(146, 37, 4, 0.603);
+}
+
+.pos3 {
+  top: 15%;
+  left: 10%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 4s) forwards;
+  background-color: rgba(101, 4, 146, 0.603);
+}
+
+.pos4 {
+  top: 25%;
+  right: 20%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 6s) forwards;
+  background-color: rgba(146, 132, 4, 0.603);
+}
+
+.pos5 {
+  top: 5%;
+  right: 12%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 8s) forwards;
+  background-color: rgba(146, 68, 4, 0.603);
+}
+
+.pos6 {
+  top: -5%;
+  left: 36%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 10s) forwards;
+  background-color: rgba(146, 4, 92, 0.603);
+}
+
+.pos7 {
+  bottom: 5%;
+  right: 23%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 12s) forwards;
+  background-color: rgba(146, 4, 4, 0.603);
+}
+
+.pos8 {
+  top: 55%;
+  left: 18%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 14s) forwards;
+  background-color: rgba(4, 125, 146, 0.603);
+}
+
+.pos9 {
+  bottom: 5%;
+  left: 23%;
+  opacity: 0;
+  animation: jump 1s cubic-bezier(0.5,1.18,.8,1.1) calc(var(--time) + 16s) forwards;
+  background-color: rgba(2, 90, 2, 0.8);
+}
+
+.xl {
+  width: 80px;
+  height: 80px;
+}
+
+.l {
+  width: 60px;
+  height: 60px;
+}
+
+.m {
+  width: 40px;
+  height: 40px;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+}
+
+@keyframes jump {
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  80%{
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}

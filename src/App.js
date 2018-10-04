@@ -4,12 +4,14 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Home from './components/Home';
 import SocialLinks from './components/SocialLinks';
+import Bubbles from './components/Bubbles';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Home />
+        <Bubbles />
+        <Projects />
       </div>
     );
   }
