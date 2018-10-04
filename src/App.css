@@ -27,6 +27,10 @@ a {
   margin: 0 auto;
 }
 
+.animate {
+  animation: salta 0.8s cubic-bezier(0.5,1.18,.8,1.1) forwards;
+}
+
 @keyframes fadeIn {
   10% {
     opacity: 0;
@@ -50,5 +54,22 @@ a {
   }
   100% {
      transform: translateY(0);
+  }
+}
+
+@keyframes salta {
+  0%{
+    opacity: 1;
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(0.8);
+  }
+  80%{
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
   }
 }

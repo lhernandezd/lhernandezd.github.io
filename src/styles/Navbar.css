@@ -11,14 +11,14 @@
 .navbar__item {
   text-align: center;
   flex: 1;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 .navbar__link:hover {
   color: var(--all-color);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 375px) {
   .navbar__item {
     font-size: 1.5em;
   }
