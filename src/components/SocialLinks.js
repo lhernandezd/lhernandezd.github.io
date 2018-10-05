@@ -3,7 +3,7 @@ import '../styles/SocialLinks.css';
 
 const SocialLinks = (props) => {
   return (
-    <div className="section__social">
+    <div className="section__social" style={props.styles}>
       <a className="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/lhernandezd">
         <i className="fab fa-github"></i>
       </a>

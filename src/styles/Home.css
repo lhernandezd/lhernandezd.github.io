@@ -54,11 +54,7 @@
     width: 105%;
 }
 
-/*SOCIAL LINKS*/
-.section__social {
-  position: absolute;
-  bottom: 12%;
-}
+
 
 @media (min-width: 380px) {
   .section__presentation{

@@ -31,6 +31,33 @@ a {
   animation: salta 0.8s cubic-bezier(0.5,1.18,.8,1.1) forwards;
 }
 
+/*NAVBAR*/
+.navbar {
+  opacity: 0;
+  animation: 2s fadeIn forwards;
+}
+
+.navbar__section {
+  display: flex;
+  padding: 20px 0;
+}
+
+.navbar__item {
+  text-align: center;
+  flex: 1;
+  font-size: 1em;
+}
+
+.navbar__link:hover {
+  color: var(--all-color);
+}
+
+@media (min-width: 375px) {
+  .navbar__item {
+    font-size: 1.5em;
+  }
+}
+
 @keyframes fadeIn {
   10% {
     opacity: 0;

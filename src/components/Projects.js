@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Projects.css';
-import Navbar from './Navbar';
 import ProjectCard from './ProjectCard';
 
 class Projects extends React.Component {
@@ -65,7 +64,6 @@ class Projects extends React.Component {
   render() {
     return(
       <div className="projects">
-        <Navbar />
         <div className="wrapper">
           <div className="section__projects">
             <h1 className="projects__title"><span className="title">Projects</span></h1>

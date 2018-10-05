@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/Home.css';
-import Navbar from './Navbar';
 import SocialLinks from './SocialLinks';
 
 class Home extends React.Component {
@@ -11,9 +10,9 @@ class Home extends React.Component {
   }
 
   render() {
+    const styles = {position: 'absolute', bottom: '12%'}
     return (
       <div className="home">
-        <Navbar />
         <div className="section__presentation">
           <h1 className="presentation__title">
             <span className="presentation__title--span" onClick={this.handleClick.bind(this)}>Luis David</span>
@@ -21,7 +20,7 @@ class Home extends React.Component {
           </h1>
           <p className="presentation__paragraph">Electronic Engineer and Web Developer</p>
         </div>
-        <SocialLinks />
+        <SocialLinks styles={styles}/>
       </div>
     )
   }

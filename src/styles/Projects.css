@@ -2,7 +2,7 @@
   margin: 40px auto;
   width: 100%;
   text-align: center;
-  animation: bounceInDown 4s forwards;
+  animation: bounceInDown 3s forwards;
 }
 
 .title {
@@ -26,5 +26,5 @@
   flex-wrap: wrap;
   padding-top: 30px;
   opacity: 0;
-  animation: 4s fadeIn 2s forwards;
+  animation: 3s fadeIn 2s forwards;
 }
