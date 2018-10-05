@@ -1,0 +1,78 @@
+p::selection {
+  background: var(--all-color); 
+  color: white;
+}
+
+.about__title {
+  margin: 40px auto;
+  width: 100%;
+  text-align: center;
+  animation:bounceInDown 4s forwards;
+}
+
+.title {
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 120px;
+  height: 3px;
+  background-color:  var(--all-color);
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  opacity: 0;
+  animation: 4s fadeIn 2s forwards;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.content__image {
+  background-image: url('../images/Scan.jpeg');
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.content__paragraphs {
+  font-size: 16px;
+  line-height: 26px;
+  width: 100%;
+}
+
+.paragraphs__link {
+  text-decoration: underline;
+  font-style: italic;
+  color: var(--all-color);
+  font-weight: bold;
+}
+
+@media (min-width: 770px) {
+  .about__content {
+    flex-wrap: nowrap;
+  }
+  
+  .content__image {
+    width: 300px;
+  }
+  
+  .content__paragraphs {
+    width: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .content__paragraphs {
+    width: 70%;
+  }
+}

@@ -6,13 +6,15 @@ import Home from './components/Home';
 import SocialLinks from './components/SocialLinks';
 import Bubbles from './components/Bubbles';
 import Contact from './components/Contact';
+import About from './components/About';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <Bubbles />
-        <Contact />
+        <Navbar />
+        <About />
       </div>
     );
   }
