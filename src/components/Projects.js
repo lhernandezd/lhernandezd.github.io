@@ -12,7 +12,7 @@ class Projects extends React.Component {
           name: 'Portfolio',
           icons: ['fab fa-react', 'fab fa-css3-alt'],
           meta: 'React, React-router, HTML, CSS, Js',
-          links: ['https://lhernandezd.github.io','https://github.com/lhernandezd.github.io/lhernandezd'],
+          links: ['https://lhernandezd.github.io/','https://github.com/lhernandezd.github.io/lhernandezd'],
           description: 'Single wep page application which includes my personal information and some projects.'
         },
         {
