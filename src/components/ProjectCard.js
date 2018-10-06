@@ -18,11 +18,11 @@ const ProjectCard = (props) => {
       }
       <span className="card__meta">{props.meta}</span>
       {props.links.length < 2 ?
-        <a className="card__link" href={props.links[0]}>View Code</a>
+        <a className="card__link" target="_blank" rel="noopener noreferrer" href={props.links[0]}>View Code</a>
         : 
         <div>
-          <a className="card__link" href={props.links[0]}>View Project</a>
-          <a className="card__link" href={props.links[1]}>View Code</a>
+          <a className="card__link" target="_blank" rel="noopener noreferrer" href={props.links[0]}>View Project</a>
+          <a className="card__link" target="_blank" rel="noopener noreferrer" href={props.links[1]}>View Code</a>
         </div>
       }
       <p>{props.description}</p>

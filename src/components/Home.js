@@ -10,7 +10,7 @@ class Home extends React.Component {
   }
 
   render() {
-    const styles = {position: 'absolute', bottom: '12%'}
+    const styles = {position: 'absolute', bottom: '10%'}
     return (
       <div className="home">
         <div className="section__presentation">

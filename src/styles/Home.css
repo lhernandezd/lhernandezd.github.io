@@ -1,15 +1,16 @@
 .section__presentation {
-  position: absolute;
-  font-size: 1.5em;
-  top: 15%;
-  width: 100%;
-  text-align: center;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   animation:bounceInDown 4s forwards;
+  align-content: center;
+  align-items: center;
+  display:flex;
+  font-size: 1.5em;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  position: absolute;
+  top: 15%;
+  text-align: center;
+  width: 100%;
 }
 
 .presentation__title {
@@ -22,26 +23,26 @@
 }
 
 .presentation__paragraph {
-  margin:0;
   font-size: 0.8em;
-  text-align: center;
+  height: auto;
+  margin:0;
   padding: 20px;
+  text-align: center;
   transition: color 250ms, text-shadow 250ms;
   width: auto;
-  height: auto;
 }
 
 .presentation__paragraph::after {
-  position: absolute;
-  z-index: -1;
   bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  content: '';
-  width: 150px;
-  height: 3px;
   background-color:  var(--all-color);
+  content: '';
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
   transition: all 250ms;
+  width: 150px;
+  z-index: -1;
 }
 
 .presentation__paragraph:hover {
@@ -73,5 +74,17 @@
 
   .presentation__paragraph::after {
     width: 500px;
+  }
+}
+
+@media (min-height: 1000px) {
+  .section__presentation{
+    font-size: 3em;
+    top: 25%;
+  }
+
+  .presentation__paragraph::after {
+    font-size: 1.3em;
+    width: 650px;
   }
 }

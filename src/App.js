@@ -3,9 +3,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  Switch,
-  Redirect
+  Link
 } from 'react-router-dom';
 import Projects from './components/Projects';
 import Home from './components/Home';
@@ -15,7 +13,7 @@ import About from './components/About';
 
 class App extends Component {
   render() {
-    const colors = ['rgba(4, 125, 146, 0.603)','rgba(146, 37, 4, 0.603)','rgba(101, 4, 146, 0.603)','rgba(146, 132, 4, 0.603)','rgba(146, 68, 4, 0.603)','rgba(146, 4, 92, 0.603);']
+    const colors = ['rgba(4, 125, 146, 0.603)','rgba(146, 37, 4, 0.603)','rgba(4, 146, 16, 0.603)','rgba(146, 132, 4, 0.603)','rgba(146, 68, 4, 0.603)','rgba(2, 90, 2, 0.8)','rgba(146, 4, 4, 0.603)','rgba(101, 4, 146, 0.603)','rgba(146, 4, 92, 0.603)']
     const random = Math.floor((Math.random() * (colors.length-1)) + 0);
     return (
       <Router>

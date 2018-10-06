@@ -12,7 +12,7 @@ class Projects extends React.Component {
           name: 'Portfolio',
           icons: ['fab fa-react', 'fab fa-css3-alt'],
           meta: 'React, React-router, HTML, CSS, Js',
-          links: ['https://lhernandezd.github.io','https://github.com/lhernandezd/react-timer'],
+          links: ['https://lhernandezd.github.io','https://github.com/lhernandezd.github.io/lhernandezd'],
           description: 'Single wep page application which includes my personal information and some projects.'
         },
         {
@@ -56,6 +56,13 @@ class Projects extends React.Component {
           meta: 'Js, jQuery, HTML, CSS',
           links: ['https://lhernandezd.github.io/Picas-y-Fijas/', 'https://github.com/lhernandezd/Picas-y-Fijas'],
           description: 'Simple game that consists of the user introducing series of 4 different numbers until guessing the final number with the help of "picas" and "fijas".'
+        },
+        {
+          name: 'Portfolio V1',
+          icons: ['fab fa-html5', 'fab fa-js-square', 'fab fa-css3-alt'],
+          meta: 'Js, HTML, CSS',
+          links: ['https://lhernandezd.github.io/portfolio/', 'https://github.com/lhernandezd/portfolio'],
+          description: 'My first portfolio, created when I was starting in the world of Web Development. Made with HTML, CSS and a little bit of Javascript.'
         }
       ]
     }

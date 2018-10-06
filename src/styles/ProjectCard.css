@@ -1,8 +1,8 @@
 .content__card {
-  width: 100%;
-  text-align: center;
   margin-bottom: 60px;
   padding: 0 10px;
+  text-align: center;
+  width: 100%;
 }
 
 .card__meta {
@@ -11,16 +11,16 @@
 
 .card__link {
   color: var(--all-color);
-  text-decoration: underline;
   display: block;
   margin: 16px 0;
+  text-decoration: underline;
 }
 
 .content__card:hover {
   border-radius: 10px;
+  box-shadow: 5px 8px 10px #3a3a3a;
   background-color: var(--all-color);
   color:white;
-  box-shadow: 5px 8px 10px #3a3a3a;
 }
 
 .content__card:hover .card__link {
